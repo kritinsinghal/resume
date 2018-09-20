@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Kritin}{Singhal}{
+	
+} 
+
+
+\section{SKILLS \hspace{1ex}  \hrulefill} 
+\begin{minipage}[t]{.3\textwidth}
+\subsection{Programming}
+JavaScript \textbullet{}  C++ \textbullet{} Java \textbullet{} CSS \textbullet{} pHp \textbullet{} MySQL \textbullet{} XML \textbullet{} Scheme \textbullet{} HTML \textbullet{} C \textbullet{} SASS \textbullet{}  Python \textbullet{} Ruby \textbullet{} Shell
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.3\textwidth}
+\subsection{Frameworks}
+React  \textbullet{} Redux \textbullet{} Redis \textbullet{} Ember \\ 
+CoffeeScript \textbullet{} Angular \textbullet{} JQuery \\ Node
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.3\textwidth}
+\subsection{Tools}
+Git \textbullet{} Intellij \textbullet{} Android \textbullet{} DrRacket \textbullet{} Office \textbullet{} AWS \textbullet{} CircleCI \textbullet{} Rundeck \textbullet{} JIRA
+\sectionsep
+\end{minipage}
+\sectionsep
+
+\section{EXPERIENCE  \hspace{1ex}  \hrulefill}
+
+
+\runsubsection{Universe}
+\descript{| Division of Ticketmaster and LNE | Full Stack Software Developer}
+\location{Apr 2018 – Aug 2018 | Toronto, Canada}
+\begin{tightemize}
+\item \descripted{Integrated seats.io} for Event Venues to unlock the \descripted{\$70m Asian Market}.
+\item Improvised accounts \descripted{report generation} from \descripted{PostgreSQL} to \descripted{MongoDB} for more than \descripted{100m  users}.
+\item Constructed a \descripted{multi-user management system} for all Universe accounts using \descripted{React}, \descripted{Redux}, \descripted{Redis} and \descripted{Ruby}. 
+\item Developed a \descripted{GraphQL API} to \descripted{transfer balances} between Universe Accounts on a \descripted{Hack Day}. 
+\item Built the \descripted{Premium Tier} from scratch using \descripted{JavaScript}, \descripted{Ruby} and \descripted{GraphQL}. 
+\item Transformed the web stack from old \descripted{Ember} to \descripted{React} which \descripted{improved the landing page loading time} by \descripted {440\%}.
+\end{tightemize}
+\sectionsep
+
+
+\runsubsection{IT Advisory Board}
+\descript{| University of Waterloo}
+\location{Apr 2018 – Present | Waterloo, Canada}
+\begin{tightemize}
+\item Provided viable long-term solutions, problem-solving and constructive feedback on current operations and strategies.
+\item \descripted{Improved technical services} offered to students on campus and received the inside scoop on upcoming IT changes at UW.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{https://www.kritinsinghal.com/project-bhutan.html}{Disabled Persons Association of Bhutan}}
+\descript{| Technology Assistant | Social Volunteer}
+\location{May 2016 – June 2016 | Thimphu, Bhutan}
+\begin{tightemize}
+\item Developed \descripted{strong leadership skills} by training members to design posters and invitation cards in \descripted{Photoshop}.
+\item Maintained accounts and staff records of the organization by \descripted{Excel}.
+\item Gained \descripted{international experience} by attending meetings and workshops with global representatives.
+\end{tightemize}
+\sectionsep
+
+\section{PROJECTS \hspace{1ex}  \hrulefill}
+\runsubsection{\href{https://www.kritinsinghal.com/nova}{NOVA}}
+\descript{| STARTERHACKS WINNER | HTML, CSS, JavaScript, Java, XML, NodeJS | 2018
+\href{http://www.github.com/kritinsinghal/nova}{ \includegraphics[scale=0.4]{github.png} git}}
+
+
+ % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Created an \descripted{artificial intelligence bot} using \descripted{NodeJS} to tackle mental health concerns on university campuses.
+\item Developed an \descripted{Android Application}using \descripted{Java} and \descripted{XML}which contains the bot and a list of campus resources.
+
+\item Used \descripted{JSON API}to get user’s location and share it to the Campus Police immediately incase of an emergency.
+\item Won the \descripted{Best Pitch Award} in StarterHacks 2018 sponsored by \descripted{Deloitte Digital}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{www.kritinsinghal.com/hoteldb.html}{Hotel Database Management System}}
+\descript{| C++ | 2017 \href{https://www.github.com/kritinsinghal/hoteldatabase}{ \includegraphics[scale=0.4]{github.png} git}}
+\begin{tightemize}
+\item Manages all the guest \descripted{entry}, \descripted{check in}, \descripted{check out} and \descripted{additional hotel services}.
+\item Used \descripted{classes} and \descripted{binary file handling} to create the database system.
+\item Holds a \descripted{password protected manager section} where rooms and services can be added and their prices be set.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{http://www.kritinsinghal.com/systematic-calc.html}{Systematic Gen}}
+\descript{| Java, XML | 2016 \href{https://github.com/kritinsinghal/systematic-gen}{ \includegraphics[scale=0.4]{github.png} git}}
+\begin{tightemize}
+\item Created an \descripted{Android mobile application} that essentially estimates the cost of printing for the printing industry. 
+\item Used \descripted{Android SDK} to \descripted{Intent} different pages and send values over them. 
+\item Covers conversion and expense of all sub-sections: design, paper, folding, lifting, sewing, binding and lamination.
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{EDUCATION \hspace{1ex} \hrulefill}
+\runsubsection{University of Waterloo}
+\descript{| Candidate for Bachelors in Computer Science Honours, Co-op, 2A}
+\location{September 2017 - May 2022 | Waterloo, ON | Cum. GPA: 3.4 | President's Scholarship of Distinction}
+\sectionsep
+
+
+
+
+
+\end{document}  \documentclass[]{article}
